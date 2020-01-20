@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>SVSI BANK</title>
+</head>
+
+<body>
+    <!-- navigation-bar Start-->
+    <div>
+
+        <nav class="navigation-bar">
+            <img class="logo" src="img/Logo.png">
+            <span class="navTitle">SVSI BANK</span>
+            <button id="logIn">Login</button>
+            <button id="signUp">SignUp</button>
+            <button id="about">About</button>
+            <button id="contact">Contact</button>
+        </nav>
+    </div>
+    <!-- navigation-bar End-->
+
+    <!-- SignUp Modal Start-->
+    <div id="signUp-Modal" class="signUp-Modal">
+        <!-- SignUp Modal content -->
+        <div class="signUp-Modal-Content">
+            <span class="signUp-Close">&times;</span>
+            <h1>SignUp</h1>
+            <input placeholder="Name" id="user" type="text" required></span><br><br>
+            <input placeholder="User Name" type="text" id="userName" required><br><br>
+            <input placeholder="Password" type="password" id="password" required><br><br>
+            <input placeholder="Confirm Password" type="password" id="cPassword" required><br><br>
+            <input placeholder="Email" type="email" id="email" required><br><br>
+            <input placeholder="Mobile" type="text" id="mobile" required><br><br>
+            <input type="radio" name="gen" value="male">Male
+            <input type="radio" name="gen" value="female">Female
+            <input type="radio" name="gen" value="other">Other<br><br>
+            <button id="signUpBtn">SignUp</button>
+            <button id="resetSignUp">Reset</button>
+            <span style="color: cornsilk;" id="uspan"></span>
+        </div>
+    </div>
+    <!-- SignUp Modal End-->
+
+    <!-- Login Modal Start-->
+    <div id="logIn-Modal" class="logIn-Modal">
+        <!-- Login Modal content -->
+        <div class="logIn-Modal-Content">
+            <span class="logIn-Close">&times;</span>
+            <h1>Login</h1>
+            <input placeholder="User Name" type="text" id="userLogin" required><br><br>
+            <input placeholder="password" type="password" id="passwordLogin" required><br><br>
+            <button id="login">Login</button>
+            <button id="resetLogin">Reset</button>
+        </div>
+    </div>
+    <!-- Login Modal End-->
+
+    <!-- contact Modal Start-->
+    <div id="contact-Modal" class="contact-Modal">
+        <!-- contact Modal content -->
+        <div class="contact-Modal-Content">
+            <span class="contact-Close">&times;</span>
+            <h1>Contact</h1>
+            <h3 style="text-decoration: underline;color: #ffffff;">
+                Manager
+            </h3>
+            <p>
+                Ibrahim <br>
+                8746383292
+            </p>
+            <h3 style="text-decoration: underline;color: #ffffff;">
+                Assist Manager
+            </h3>
+            <p>
+                Sudhir<br>
+                94738383292
+            </p>
+            <h3 style="text-decoration: underline;color: #ffffff;">
+                Operational
+            </h3>
+            <p>
+                Vinith<br>
+                94738383292
+            </p>
+            <h3 style="text-decoration: underline;color: #ffffff;">
+                Tech Support
+            </h3>
+            <p>
+                Sabarish <br>
+                94738383292
+            </p>
+        </div>
+    </div>
+    <!-- contact Modal End-->
+
+    <!-- about Modal Start-->
+    <div id="about-Modal" class="about-Modal">
+        <!-- contact Modal content -->
+        <div class="about-Modal-Content">
+            <span class="about-Close">&times;</span>
+            <h1>about</h1>
+            <p>about details need to be filled</p>
+        </div>
+    </div>
+    <!-- about Modal End-->
+
+</body>
+<script src="scripts/main.js"></script>
+
+</html>

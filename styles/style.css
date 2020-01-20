@@ -1,0 +1,180 @@
+/* Navigation Bar Style Start */
+
+.navigation-bar {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    background-color: #88fa066e;
+}
+
+.navTitle {
+    margin-left: 27%;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 5px;
+}
+
+.navigation-bar button {
+    box-shadow: transparent;
+    height: 60px;
+    line-height: 80px;
+    color: #ff5100;
+    font-weight: 700;
+    font-size: 30px;
+    float: right;
+    background-color: transparent;
+    border: tomato;
+    text-align: center;
+}
+
+.navTitle {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    font-size: 50px;
+    color: #8553e2;
+}
+
+/* Navigation Bar Style End */
+
+/*model Start*/
+
+.signUp-Modal, .logIn-Modal, .contact-Modal, .about-Modal, .withdraw-Modal, .deposit-Modal, .statement-Modal, .userInfo-Modal {
+    display: none;
+    /*Hiding the modal by default*/
+    position: fixed;
+    /*making modal to stay in a place*/
+    z-index: 1;
+    /*making modal to stay top*/
+    padding-top: 100px;
+    /*Location of the box*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*width of the modal*/
+    height: 100%;
+    /*height of the model*/
+    overflow: auto;
+    /*auto scroll will enable if needed*/
+    background-color: rgb(0, 0, 0);
+    /*FallBack color*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*Black w/ opacity*/
+}
+
+/*modal Content*/
+
+.signUp-Modal-Content, .logIn-Modal-Content, .contact-Modal-Content, .about-Modal-Content, .withdraw-Modal-Content, .deposit-Modal-Content, .statement-Modal-Content, .userInfo-Modal-Content {
+    background-color: #008000a2;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    border-radius: 25px;
+    overflow: auto;
+    color: red;
+    background-image: linear-gradient(-90deg, #008000a2, #fffb00c4);
+}
+
+.statement-Modal-Content {
+    height: 500px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 30pxpx;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+    border-radius: 5px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #ff000083;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f80e0ee0;
+}
+
+.signUp-Modal-Content h1, .logIn-Modal-Content h1, .contact-Modal-Content h1, .about-Modal-Content h1, .withdraw-Modal-Content h1, .deposit-Modal-Content h1, .statement-Modal-Content h1, .userInfo-Modal-Content h1 {
+    color: #fff;
+}
+
+.signUp-Modal-Content button, .logIn-Modal-Content button, .contact-Modal-Content button, .about-Modal-Content button, .withdraw-Modal-Content button, .deposit-Modal-Content button, .statement-Modal-Content button, .userInfo-Modal-Content button {
+    background-color: #fff;
+    width: 100px;
+    font-weight: 800;
+    color: #8553e2;
+    font-size: medium;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.signUp-Modal-Content button:hover, .logIn-Modal-Content button:hover, .contact-Modal-Content button:hover, .about-Modal-Content button:hover, .withdraw-Modal-Content button:hover, .deposit-Modal-Content button:hover, .statement-Modal-Content button:hover, .userInfo-Modal-Content butto:hover {
+    background-color: #d85a20c9;
+    border-color: #8553e2;
+    color: #fff;
+}
+
+.signUp-Close:hover, .signUp-Close:focus, .logIn-Close:hover, .logIn-Close:focus, .contact-Close:hover, .contact-Close:focus, .about-Close:hover, .about-Close:focus, .withdraw-Close:hover, .withdraw-Close:focus, .deposit-Close:hover, .deposit-Close:focus, .statement-Close:hover, .statement-Close:focus, .userInfo-Close:hover, .userInfo-Close:focus {
+    color: rgb(6, 50, 248);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signUp-Close, .logIn-Close, .contact-Close, .about-Close, .withdraw-Close, .deposit-Close, .userInfo-Close, .statement-Close {
+    float: right;
+}
+
+/*model End*/
+
+/*background image*/
+
+html {
+    background-image: url(/img/Logo.png);
+    background-position-y: 250px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-clip: cover;
+    background-size: 500px;
+}
+
+.side-bar {
+    height: 100%;
+    width: 15%;
+    background-color: #449ae094;
+    overflow: auto;
+    position: fixed;
+}
+
+.side-bar button {
+    width: 100%;
+    background-color: transparent;
+    font-size: 25px;
+    border-color: #64e044;
+    margin-top: 2px;
+    color: crimson;
+    font-weight: 500;
+    border-radius: 5px;
+    background-image: linear-gradient(-90deg, #b1a5b1c4, #f72788c2);
+}
+
+.side-bar button :hover {
+    color: #888;
+}
